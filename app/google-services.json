@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "689109737319",
+    "project_id": "food-ordering-system-ee78d",
+    "storage_bucket": "food-ordering-system-ee78d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689109737319:android:1747c84b9e3f6c28f2d9c2",
+        "android_client_info": {
+          "package_name": "com.example.splash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689109737319-fe2q8n96q9oma39rbj4a2no36vcflihv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.splash",
+            "certificate_hash": "525faf2b83e51ecd7fd0174e2bdd2b50a127dd27"
+          }
+        },
+        {
+          "client_id": "689109737319-8diemkbbctvvtt0ues2eei07ta05e167.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHQCidqs-DuRZXlFhGuMZeYrS-Vyeo5x8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689109737319-8diemkbbctvvtt0ues2eei07ta05e167.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

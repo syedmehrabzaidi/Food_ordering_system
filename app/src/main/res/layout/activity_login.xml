@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="20dp"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:onClick="Signup"
+        app:srcCompat="@drawable/logo4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HELLO , WelCOME BACK"
+        android:textSize="40sp"
+        android:fontFamily="@font/bangers"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Sign In to Contiune"
+        android:textSize="18sp"
+        app:fontFamily="@font/antic" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+
+      <EditText
+          android:id="@+id/emailtxt"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:text="Email"
+          android:textSize="25sp"
+          android:textStyle="bold|italic"/><!--set bold and italic text style-->
+
+      <EditText
+          android:id="@+id/passtxt"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:text="Password"
+          android:textSize="25sp"
+          android:textStyle="bold|italic"/><!--set bold and italic text style-->
+
+      <Button
+        android:id="@+id/forget"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="#00000000"
+        android:elevation="0dp"
+        android:gravity="right"
+        android:paddingTop="20dp"
+        android:text="Forget Password?" />
+
+      <Button
+          android:id="@+id/go"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="#000"
+          android:onClick="loginBtn"
+          android:text="GO"
+
+          android:textColor="#fff" />
+
+      <Button
+          android:id="@+id/signup"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="#00000000"
+          android:elevation="0dp"
+          android:gravity="center"
+          android:onClick="signup"
+          android:paddingTop="20dp"
+          android:text="New User? Sign up"
+          android:textColor="#0D76CA" />
+
+    </LinearLayout>
+</LinearLayout>
