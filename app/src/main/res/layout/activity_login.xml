@@ -13,10 +13,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:onClick="Signup"
-        app:srcCompat="@drawable/logo4" />
+        android:layout_width="182dp"
+        android:layout_height="173dp"
+
+        app:srcCompat="@drawable/logo6" />
 
     <TextView
         android:id="@+id/textView3"

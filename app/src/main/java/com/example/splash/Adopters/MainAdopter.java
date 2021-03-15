@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.splash.Models.MainModel;
+import com.example.splash.MainModel;
 import com.example.splash.R;
 
 import java.util.ArrayList;
@@ -29,17 +29,18 @@ public class MainAdopter extends RecyclerView.Adapter<MainAdopter.viewholder>{
     @NonNull
     @Override
     public viewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-       View view = LayoutInflater.from(context).inflate(R.layout.sample_mainfood, parent,false)
+       View view = LayoutInflater.from(context).inflate(R.layout.sample_mainfood, parent,false);
         return new viewholder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull viewholder holder, int position) {
-      final MainModel model=list.get(position);
+        final MainModel model=list.get(position);
+
       holder.foodimage.setImageResource(model.getImage());
-      holder.foodname.setText(model.getName());
-        holder.foodprice.setText(model.getPrice());
-        holder.fooddesc.setText(model.getDesc());
+      holder.name.setText(model.getName());
+        holder.price.setText(model.getPrice());
+        holder.desc.setText(model.getDesc());
     }
 
     @Override

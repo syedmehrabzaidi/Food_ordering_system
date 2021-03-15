@@ -13,10 +13,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        app:srcCompat="@drawable/logo11"
-        android:contentDescription="TODO" />
+        android:layout_width="157dp"
+        android:layout_height="173dp"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/logo6" />
 
     <TextView
         android:id="@+id/textView3"

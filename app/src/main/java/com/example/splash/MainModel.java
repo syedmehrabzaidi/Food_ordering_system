@@ -1,4 +1,4 @@
-package com.example.splash.Models;
+package com.example.splash;
 
 public class MainModel {
     int image;
