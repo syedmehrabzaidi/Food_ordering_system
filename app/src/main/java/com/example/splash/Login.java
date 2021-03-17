@@ -70,7 +70,21 @@ public class Login extends AppCompatActivity {
                  }
              });
 
+
+
+
+
+
+
+
+
+
          }
 
 
-     }
+    public void temp(View view) {
+        Intent i = new Intent(Login.this, order.class);
+        startActivity(i);
+
+    }
+}

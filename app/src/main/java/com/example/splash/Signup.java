@@ -74,7 +74,7 @@ public class Signup extends AppCompatActivity {
                         reference.child(key).setValue(user);
 
 
-                        Intent intent = new Intent(Signup.this, Dashboard.class);
+                        Intent intent = new Intent(Signup.this, order.class);
                         startActivity(intent);
                     } else {
                         Toast.makeText(Signup.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();

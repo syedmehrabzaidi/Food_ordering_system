@@ -31,6 +31,7 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:fontFamily="sans-serif-black"
         android:text="Sign In to Contiune"
         android:textSize="18sp"
@@ -47,18 +48,24 @@
           android:layout_width="fill_parent"
           android:layout_height="wrap_content"
           android:layout_centerInParent="true"
-          android:text="Email"
+          android:layout_marginEnd="5dp"
+          android:layout_marginBottom="15dp"
+          android:background="@drawable/edittext_background"
+          android:gravity="center"
+          android:hint="Email"
           android:textSize="25sp"
-          android:textStyle="bold|italic"/><!--set bold and italic text style-->
+          android:textStyle="bold|italic" /><!--set bold and italic text style-->
 
       <EditText
           android:id="@+id/passtxt"
           android:layout_width="fill_parent"
           android:layout_height="wrap_content"
           android:layout_centerInParent="true"
-          android:text="Password"
+          android:background="@drawable/edittext_background"
+          android:gravity="center"
+          android:hint="Password"
           android:textSize="25sp"
-          android:textStyle="bold|italic"/><!--set bold and italic text style-->
+          android:textStyle="bold|italic" /><!--set bold and italic text style-->
 
       <Button
         android:id="@+id/forget"
@@ -69,16 +76,18 @@
         android:elevation="0dp"
         android:gravity="right"
         android:paddingTop="20dp"
+          android:onClick="temp"
         android:text="Forget Password?" />
 
       <Button
           android:id="@+id/go"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:background="#000"
-          android:onClick="loginBtn"
-          android:text="GO"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
 
+          android:background="@drawable/btn_background"
+          android:onClick="loginBtn"
+
+          android:text="GO"
           android:textColor="#fff" />
 
       <Button

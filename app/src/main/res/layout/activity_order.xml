@@ -3,76 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="144dp">
+    android:layout_height="match_parent">
     tools:context=".order">
 
 
-    <androidx.cardview.widget.CardView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/orderRecylerView"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginRight="10dp"
-
-        app:cardCornerRadius="5dp"
-        app:cardElevation="5dp">
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/foodimage"
-                android:layout_width="363dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/biryani" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/foodname"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="12dp"
-                    android:paddingTop="40dp"
-                    android:text="Name"
-                    android:textColor="#FC130C0D"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="1px"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="12dp"
-                        android:layout_weight="1"
-                        android:text="Rs:"
-                        android:textColor="#990F0F" />
-
-                    <TextView
-                        android:id="@+id/foodprice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:text="Price"
-                        android:textColor="#990F0F" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+        android:layout_height="match_parent"
+        tools:listitem="@layout/sample_order" />
 </LinearLayout>
