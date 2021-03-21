@@ -83,8 +83,13 @@ public class Login extends AppCompatActivity {
 
 
     public void temp(View view) {
-        Intent i = new Intent(Login.this, order.class);
+        Intent i = new Intent(Login.this, forget.class);
         startActivity(i);
 
+    }
+
+    public void admin_add_food(View view) {
+        Intent i = new Intent(Login.this, add_food.class);
+        startActivity(i);
     }
 }

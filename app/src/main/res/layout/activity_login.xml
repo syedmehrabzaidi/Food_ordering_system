@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Login"
     android:orientation="vertical"
-    android:background="#fff"
+    android:background="#F7C229"
     android:padding="20dp"
     >
 
@@ -53,7 +53,9 @@
           android:background="@drawable/edittext_background"
           android:gravity="center"
           android:hint="Email"
-          android:textSize="25sp"
+          android:paddingTop="3dp"
+          android:paddingBottom="3dp"
+          android:textSize="18sp"
           android:textStyle="bold|italic" /><!--set bold and italic text style-->
 
       <EditText
@@ -64,7 +66,10 @@
           android:background="@drawable/edittext_background"
           android:gravity="center"
           android:hint="Password"
-          android:textSize="25sp"
+          android:inputType="textPassword"
+          android:paddingTop="3dp"
+          android:paddingBottom="3dp"
+          android:textSize="18sp"
           android:textStyle="bold|italic" /><!--set bold and italic text style-->
 
       <Button
@@ -84,9 +89,10 @@
           android:layout_width="wrap_content"
           android:layout_height="match_parent"
 
+          android:layout_marginLeft="130dp"
           android:background="@drawable/btn_background"
-          android:onClick="loginBtn"
 
+          android:onClick="loginBtn"
           android:text="GO"
           android:textColor="#fff" />
 
@@ -100,6 +106,18 @@
           android:onClick="signup"
           android:paddingTop="20dp"
           android:text="New User? Sign up"
+          android:textColor="#0D76CA" />
+
+      <Button
+          android:id="@+id/admin"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="#00000000"
+          android:elevation="0dp"
+          android:gravity="center"
+          android:onClick="admin_add_food"
+          android:paddingTop="20dp"
+          android:text="Admin Panel"
           android:textColor="#0D76CA" />
 
     </LinearLayout>

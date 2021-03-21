@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Signup"
     android:orientation="vertical"
-    android:background="#fff"
+    android:background="#F7C229"
     android:padding="20dp"
     >
 
@@ -43,57 +43,108 @@
         android:layout_marginBottom="20dp"
         android:orientation="vertical">
 
+
         <EditText
             android:id="@+id/names"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edit_text2"
             android:ems="10"
+            android:gravity="center_vertical"
+
             android:hint="Name"
-            android:paddingTop="20dp"
             android:inputType="textEmailAddress"
-            />
+            android:paddingLeft="3dp"
+            android:paddingTop="5dp"
+            android:paddingRight="7dp"
+            android:paddingBottom="5dp"
+            android:password="true" />
+
         <EditText
             android:id="@+id/emails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edit_text2"
             android:ems="10"
-            android:hint="Email"
-            android:paddingTop="20dp"
-            android:inputType="textEmailAddress"
-            />
+            android:gravity="center_vertical"
 
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="3dp"
+            android:paddingTop="5dp"
+            android:paddingRight="7dp"
+            android:paddingBottom="5dp"
+            android:password="true" />
 
         <EditText
             android:id="@+id/pass1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edit_text2"
             android:ems="10"
+
+            android:gravity="center_vertical"
             android:hint="Password"
-            android:paddingTop="20dp"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:paddingLeft="3dp"
+            android:paddingTop="5dp"
+            android:paddingRight="7dp"
+            android:paddingBottom="5dp"
+            android:password="true" />
+
         <EditText
             android:id="@+id/pass2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/edit_text2"
             android:ems="10"
+
+            android:gravity="center_vertical"
             android:hint="Confirm Password"
-            android:paddingTop="20dp"
             android:inputType="textPassword"
-            android:lineSpacingExtra="@dimen/cardview_compat_inset_shadow"/>
+            android:lineSpacingExtra="@dimen/cardview_compat_inset_shadow"
+            android:paddingLeft="3dp"
+            android:paddingTop="5dp"
+            android:paddingRight="7dp"
+            android:paddingBottom="5dp"
+            android:password="true" />
 
         <Button
             android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="#000"
+
+            android:background="@drawable/btn2"
+            android:fontFamily="@font/aclonica"
+
             android:onClick="signup"
-            android:paddingTop="10dp"
 
 
+            android:paddingTop="7dp"
             android:text="Submit"
-            android:textColor="#fff"
+            android:textColor="#055FF7"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="login_page"
+            android:text="Already have an Account ?"
+            android:textColor="#0026FF"
             android:textSize="18sp" />
 
-</LinearLayout>
+    </LinearLayout>
 </LinearLayout>

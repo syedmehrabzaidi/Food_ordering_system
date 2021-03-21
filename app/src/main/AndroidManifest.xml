@@ -4,12 +4,15 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/logo6"
+        android:label="Restaurant Ordering System"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".detail"></activity>
+        <activity android:name=".add_food"></activity>
+        <activity android:name=".forget" />
+        <activity android:name=".bill" />
+        <activity android:name=".detail" />
         <activity android:name=".order" />
         <activity android:name=".testing" />
         <activity android:name=".Menu" />
